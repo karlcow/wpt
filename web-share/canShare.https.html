@@ -70,7 +70,7 @@
       }, 'canShare with unexpected field');
 
       test(() => {
-        assert_equals(navigator.canShare({url: 'data:the url'}), true);
+        assert_equals(navigator.canShare({url: 'data:the url,'}), true);
       }, 'canShare with data URL');
 
       test(() => {

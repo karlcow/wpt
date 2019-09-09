@@ -11,7 +11,7 @@
     <script>
         setup({explicit_timeout: true});
 
-        const url = 'data:foo';
+        const url = 'data:foo,';
         setupManualShareTest({title: '', text: '', url: getAbsoluteUrl(url)});
         callWhenButtonClicked(() => navigator.share({url}));
     </script>
